@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-image: url(./images/bg-desktop.svg);
+  background-color: var(--Violet);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+.main-container .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 15px;
+  margin: 0 2rem;
+  min-height: 100vh;
+}
+.main-container .container .header img {
+  width: 170px;
+  padding-bottom: 20px;
+  max-width: 100%;
+}
+.main-container .container section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.main-container .container section img {
+  width: 100%;
+  max-width: 100%;
+}
+.main-container .container section .text-content h2 {
+  font-size: 2.4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 20px;
+}
+.main-container .container section .text-content p {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+.main-container .container section .text-content a {
+  padding: 10px 40px;
+  display: inline-block;
+  background-color: white;
+  width: fit-content;
+  border-radius: 20px;
+  margin-top: 15px;
+  font-family: "Poppins", sans-serif;
+  color: var(--Violet);
+  box-shadow: 0px 0px 50px -14px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 0px 0px 50px -14px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 0px 0px 50px -14px rgba(0, 0, 0, 0.65);
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.main-container .container section .text-content a:hover {
+  background-color: var(--Soft-Magenta);
+  color: white;
+}
+.main-container .container section .text-content a:focus {
+  outline: none;
+}
+footer {
+  display: flex;
+  justify-content: end;
+}
+footer a {
+  margin-right: 5px;
+  font-size: 1.2rem;
+  color: white;
+  border: 1px solid white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+footer a:focus {
+  outline: none;
+}
+footer a:hover {
+  color: var(--Soft-Magenta);
+  border-color: var(--Soft-Magenta);
+}
+.attribution {
+  font-family: "Poppins", sans-serif;
+}
+.attribution a {
+  color: white;
+}
+@media (max-width: 768px) {
+  .main-container .container {
+    text-align: center;
+  }
+  .main-container .container section {
+    flex-direction: column;
+  }
+  footer {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .main-container .container section img {
+    width: 80%;
+  }
+}
